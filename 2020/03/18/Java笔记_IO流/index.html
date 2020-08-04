@@ -40,7 +40,7 @@
 <p>​      utf-8:为了统一世界语言而面世的编码，兼容ASCII,每个字符用1-4个字节表示，当字符在ASCII码表范围，就用一个字节表示。汉字在表中占3个字节。</p>
 <p>​         ISO-8859-1：欧洲码表，用1个字节表示数据，兼容ASCII编码        <strong>4、解码</strong>：文本文件是提供给人看的，但是符号文字都是通过编码后，以二进制方式存入计算机，怎么样才能看到呢？那就是需要通过解码的方式将存入的二进制还原成符号文字。即某种规则将存储在计算机中的二进制解析成符号文字。注意：每种编码方式都不一样，所以一般编码和解码的规则要一样。</p>
 <h2 id="2、字节IO流"><a href="#2、字节IO流" class="headerlink" title="2、字节IO流"></a>2、字节IO流</h2><p>​ <strong>1、体系(常用)</strong></p>
-<p><a href="https://i.loli.net/2020/03/18/v3DteBCZHIcSnKN.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="QQ图片20200318181438.png" class="fancybox"><img alt="QQ图片20200318181438.png" title="QQ图片20200318181438.png" data-src="https://i.loli.net/2020/03/18/v3DteBCZHIcSnKN.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/03/18/v3DteBCZHIcSnKN.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="QQ图片20200318181438.png" class="fancybox"><img alt="QQ图片20200318181438.png" data-src="https://i.loli.net/2020/03/18/v3DteBCZHIcSnKN.png" class="lazyload" title="QQ图片20200318181438.png"></a></p>
 <p>​ <strong>2、用法</strong></p>
 <p>​        InputStream和OutputStream为字节流的超类，也是抽象类，没法new出来使用。图中剩下4个类，使用步骤一样，但效率上不一样。</p>
 <p>​  <strong>1、FileOutputStream</strong></p>
@@ -78,7 +78,7 @@
 <p>​   <em>3</em>、缓冲的字节流和普通的字节流使用一次一个字节数组的传输方式，都快。但是普通的字节流需要创建容量较大的字节数据传输才比较快，这样会消耗资源，所以一般会使用缓冲流的一次一个字节数组传输。</p>
 <p>​   <em>4</em>、缓冲的字节流在写数据之后，如果不调用close()方法，需要调用flush()方法，将缓冲的数据写入文件。调用close()方法就不需要调用flush()方法，因为close()内部会自动调用flush()方法。close()方法是将流关闭，之后再调用write()方法时，只会写入到缓冲区内，不能写到文件中去。</p>
 <h2 id="3、字符IO流"><a href="#3、字符IO流" class="headerlink" title="3、字符IO流"></a>3、字符IO流</h2><p>​ <strong>1、体系(常用)</strong></p>
-<p><a href="https://i.loli.net/2020/03/18/Ojsfc1btZQum2LI.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="QQ图片20200318191450.png" class="fancybox"><img alt="QQ图片20200318191450.png" title="QQ图片20200318191450.png" data-src="https://i.loli.net/2020/03/18/Ojsfc1btZQum2LI.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/03/18/Ojsfc1btZQum2LI.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="QQ图片20200318191450.png" class="fancybox"><img alt="QQ图片20200318191450.png" data-src="https://i.loli.net/2020/03/18/Ojsfc1btZQum2LI.png" class="lazyload" title="QQ图片20200318191450.png"></a></p>
 <p> Reader和Writer是字符Io的超类，也是抽象类无法new出来使用。    </p>
 <p> <strong>2、OutputStreamWriter</strong></p>
 <p>​   <em>构造方法</em></p>
